@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="calcy.css">
+</head>
+<body>
+	<div class="container">
+      <form class="Calculator" name="calcy">
+         <input type="text" name="tex" class="value" placeholder="">
+         <span class="num clear" onclick="calcy.tex.value=''"><i>c</i></span>
+         <span class="num" onclick="calcy.tex.value+='/'"><i>/</i></span>
+         <span class="num" onclick="calcy.tex.value+='*'"><i>*</i></span>
+         <span class="num" onclick="calcy.tex.value+='7'"><i>7</i></span>
+         <span class="num" onclick="calcy.tex.value+='8'"><i>8</i></span>
+         <span class="num" onclick="calcy.tex.value+='9'"><i>9</i></span>
+         <span class="num" onclick="calcy.tex.value+='-'"><i>-</i></span>
+         <span class="num" onclick="calcy.tex.value+='4'"><i>4</i></span>
+         <span class="num" onclick="calcy.tex.value+='5'"><i>5</i></span>
+         <span class="num" onclick="calcy.tex.value+='6'"><i>6</i></span>
+         <span class="num plus" onclick="calcy.tex.value+='+'"><i>+</i></span>
+         <span class="num" onclick="calcy.tex.value+='1'"><i>1</i></span>
+         <span class="num" onclick="calcy.tex.value+='2'"><i>2</i></span>
+         <span class="num" onclick="calcy.tex.value+='3'"><i>3</i></span>
+         <span class="num" onclick="calcy.tex.value+='0'"><i>0</i></span>
+         <span class="num" onclick="calcy.tex.value+='00'"><i>00</i></span>
+         <span class="num" onclick="calcy.tex.value+='.'"><i>.</i></span>
+
+         <span class="num" onclick="document.calcy.tex.value=eval(calcy.tex.value)"><i>=</i></span>
+
+
+      </form>
+	</div>
+
+</body>
+</html>
